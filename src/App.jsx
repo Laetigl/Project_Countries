@@ -8,6 +8,8 @@ import axios from 'axios'
 
 function App() {
   const[data, setData] = useState([])
+  const[darkmode,setDarkMode] = useState(true)
+
   useEffect(() => {
       axios.get('https://restcountries.com/v3.1/all')
       .then(response => {
@@ -23,7 +25,7 @@ function App() {
     {
       path:'/', 
       element:(
-        <countryContext.Provider value={{data, setData}}>
+        <countryContext.Provider value={{data, setData, darkmode,setDarkMode}}>
           <CountryParent></CountryParent>
         </countryContext.Provider>
         ),
@@ -31,7 +33,7 @@ function App() {
     {
     path:'/country/:id', 
       element:(
-      <countryContext.Provider value={{data, setData}}>
+      <countryContext.Provider value={{data, setData,darkmode,setDarkMode}}>
         <CountryChild></CountryChild>
       </countryContext.Provider>
       ),
