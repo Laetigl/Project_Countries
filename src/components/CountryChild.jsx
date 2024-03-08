@@ -17,7 +17,7 @@ export default function CountryChild() {
     <div className={`w-screen flex flex-col gap-[20px] justify-center items-center p-[20px] h-screen ${!darkmode ? "bg-black" : "bg-[white]"} transition-colors duration-700 flex flex-col w-screen`}>
         <button onClick={()=> darkmode == false? setDarkMode(true): setDarkMode(false)} className={`${!darkmode? "bg-black text-white border border-[white]":"bg-white text-black border border-black"} absolute top-[10px] right-[30px] rounded-[40px] w-[100px] h-[30px] font-[Country] mt-[10px] ms-[10px]`}>Dark Mode</button>
         <div className='flex justify-center items-center'>
-        <Link to={`/`}>
+        <Link to={`/Project_Countries/`}>
             <button className={`font-[Barlow] justify-start rounded-lg flex items-center gap-[5px] pt-[90px] ${!darkmode?"text-white":"text-black"}`}>
             <img className= {`w-[30px]`} src={arrow} alt="" />
             Back to countries</button>
