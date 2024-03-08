@@ -23,7 +23,7 @@ function App() {
 
   const router = createBrowserRouter([
     {
-      path:'/', 
+      path:'/Project_Countries/', 
       element:(
         <countryContext.Provider value={{data, setData, darkmode,setDarkMode}}>
           <CountryParent></CountryParent>
