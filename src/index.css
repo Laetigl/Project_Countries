@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "Barlow";
+    src: url("../src//font/Barlow_by_Thunderpanda_ver01.otf");
+}
+
+@font-face {
+    font-family: "Country";
+    src: url("../src//font/Country.ttf");
+}
